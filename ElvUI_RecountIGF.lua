@@ -25,8 +25,6 @@ local function Update()
         local globalFadeAlpha = GetCurrentProfile()["actionbar"]["globalFadeAlpha"]
         Recount_MainWindow:SetAlpha(1.0 - globalFadeAlpha)
     end
-Recount_MainWindow:SetScript("OnEnter", Recount_OnEnter)
-Recount_MainWindow:SetScript("OnLeave", Recount_OnLeave)
 end
 
 -- Handlers
