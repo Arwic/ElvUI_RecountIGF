@@ -23,6 +23,9 @@ local function Update()
         Recount_MainWindow:SetAlpha(1.0)
     else
         local globalFadeAlpha = GetCurrentProfile()["actionbar"]["globalFadeAlpha"]
+        if globalFadeAlpha == nil then
+            globalFadeAlpha = 0
+        end
         Recount_MainWindow:SetAlpha(1.0 - globalFadeAlpha)
     end
 end
