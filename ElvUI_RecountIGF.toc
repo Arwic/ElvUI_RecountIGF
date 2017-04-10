@@ -1,6 +1,6 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: |cff1784d1ElvUI|r Recount Inherit Global Fade
-## Version: v1.0.4
+## Version: v1.0.5
 ## Author: Arwic
 ## Notes: Makes recount behave like it has ElvUI's inherit Global fade option enabled
 ## Dependencies: ElvUI, Recount

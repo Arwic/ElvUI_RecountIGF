@@ -68,8 +68,13 @@ eventFrame:RegisterEvent("PLAYER_REGEN_ENABLED") -- Leave combat
 eventFrame:RegisterEvent("PLAYER_TARGET_CHANGED") -- Target changed
 eventFrame:RegisterEvent("PLAYER_FOCUS_CHANGED") -- Focus changed
 -- Mouse enter/leave
+for _, child in ipairs({ Recount_MainWindow:GetChildren() }) do
+    child:HookScript("OnEnter", Recount_OnEnter)
+    child:HookScript("OnLeave", Recount_OnLeave)
+end
 Recount_MainWindow:SetScript("OnEnter", Recount_OnEnter)
 Recount_MainWindow:SetScript("OnLeave", Recount_OnLeave)
+
 
 -- Register handlers
 eventFrame:SetScript("OnEvent", OnEventHandler) -- Generic handler
